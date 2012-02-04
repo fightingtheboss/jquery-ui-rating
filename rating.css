@@ -1,0 +1,53 @@
+div.rating
+{
+    display: inline-block;
+    position: relative;
+}
+
+div.rating div.rating-range
+{
+    position: relative;
+    display: inline-block;
+    background: url(star.gif);
+    height: 16px;
+}
+
+div.rating div.rating-hover, div.rating div.rating-selected
+{
+    position: absolute;
+}
+
+div.rating div.rating-hover
+{
+    background: url(star.gif) left -32px;
+}
+
+div.rating div.rating-hover-rtl
+{
+    background-position: right -32px;
+}
+
+div.rating div.rating-selected
+{
+    background: url(star.gif) left -16px;
+}
+
+div.rating div.rating-selected-rtl
+{
+    background-position: right -16px;
+}
+
+
+div.rating div.rating-reset
+{
+    background: url(delete.gif) 0 0;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    float: left;
+}
+
+div.rating div.rating-reset:hover
+{
+    background-position: 0 -16px;
+}

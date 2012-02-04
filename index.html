@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Rating Widget</title>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="jquery.rating.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(document).ready( function() {
+        $('#range_ex').rating();
+        $('#select_ex').rating( { showText: false, readOnly: true } );
+        $('#div_ex').rating();
+        
+        $('#toggle_rating').toggle( function() {
+          $('#select_ex').rating('destroy');
+        },
+        function() {
+          $('#select_ex').rating({ showText: false });
+        });
+      });
+    </script>
+
+    <link rel="stylesheet" href="rating.css" type="text/css" media="screen" title="" charset="utf-8">
+  </head>
+
+  <body>
+    <h2>RANGE</h2>
+    <input type="range" id="range_ex" min="0" max="5" />
+
+    <h2>SELECT</h2>
+    <select name="select" id="select_ex">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2" selected>2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+
+    <h2>DIV</h2>
+    <div id="div_ex"></div>
+    
+    <h2>Toggle Widget</h2>
+    <a href="#" id="toggle_rating">Toggle select widget</a>
+    
+    <p>
+      Need to add examples for AJAX functionality. Maybe just follow the examples for RateIt.
+    </p>
+  </body>
+</html>
