@@ -14,8 +14,8 @@ Mina Mikhail (@fightingtheboss)
 
 Based on
 --------
-[Rate It](http://rateit.codeplex.com) (@gjunge)
-[Star Rating](http://www.fyneworks.com/jquery/star-rating/)
+* [Rate It](http://rateit.codeplex.com) (@gjunge)
+* [Star Rating](http://www.fyneworks.com/jquery/star-rating/)
 
 Default icons
 -------------
